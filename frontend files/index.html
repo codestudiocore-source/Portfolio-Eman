@@ -3,188 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';">
-    <title>Eman Fatima | Full Stack Developer</title>
-    <meta name="description" content="Portfolio of Eman Fatima, a Full Stack Developer specialized in dynamic and secure web applications.">
-    
+    <title>Eman Fatima - Full Stack Developer & UI/UX Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-QWW4UDjLA+Zj0c8I3WFTmGVZu9N3XqDLJfnmHZr2s7LsKxJuFc7cElPHZTzhVXP6AOKdMBUdv2f5QsXqVAG4zg==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet">
 </head>
-
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <h2 class="logo">CoreCode♡♡</h2>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">
+                    <h2 class="logo-text">Eman<span class="logo-accent">.</span></h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#videos" class="nav-link">Videos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-left">
-                <h3>Hello, I'm</h3>
-                <h1>EMAN FATIMA</h1>
-                <h2>Full Stack Developer & UI/UX Designer</h2>
-                <p>
-                    Web Developer with professional experience at Qamsoft Technologies,
-                    building innovative, scalable and user-focused web applications.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn-primary">Hire Me</a>
-                    <a href="assets/Eman-Fatima-CV.pdf" download="Eman_Fatima_CV"class="btn-primary">Download CV</a>
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-image fade-in-up">
+                    <img src="/images/eman.png" alt="Eman Fatima - Full Stack Developer">
+                    <div class="image-glow"></div>
                 </div>
-            </div >
-            <div class="hero-right">
-                <img src="/images/eman.png" alt="Eman Fatima - Full Stack Developer Profile">
+                <div class="hero-content fade-in-up">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="word">Hello,</span>
+                            <span class="word">I'm</span>
+                            <span class="word accent">Eman Fatima</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Full Stack Developer & UI/UX Designer</h2>
+                        <p class="hero-description">
+                            Transforming ideas into stunning digital experiences. I specialize in creating scalable, 
+                            high-performance web applications that solve real-world problems and drive business growth.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary hover-lift">Hire Me</a>
+                            <a href="/assets/Eman-Fatima-CV.pdf" class="btn btn-secondary" download="Eman-Fatima-CV.pdf">Download CV</a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item slide-in-left">
+                            <h3 class="stat-number">50+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item slide-in-left">
+                            <h3 class="stat-number">30+</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                        <div class="stat-item slide-in-left">
+                            <h3 class="stat-number">5+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>
-                I am a dedicated <span class="highlight">Full Stack Web Developer</span> with a passion for building digital experiences that are as seamless as they are impactful. During my tenure at <span class="highlight">Qamsoft Technologies</span>, I specialized in architecting and deploying dynamic, high-performance web applications designed to solve real-world problems.
-            </p>
-
-            <hr>
-
-            <h3>Why I Do What I Do</h3>
-            <p>In an era where the web is the primary touchpoint for human connection and business growth, I believe a website should be more than just a static page.</p>
-            <ul>
-                <li><span class="highlight">Front-End Artistry:</span> I craft responsive, pixel-perfect designs that adapt beautifully to any device.</li>
-                <li><span class="highlight">Back-End Engineering:</span> I thrive on server-side logic, data management, and high-level security.</li>
-                <li><span class="highlight">Strategic Problem Solving:</span> I view every project requirement as an opportunity to innovate and optimize.</li>
-            </ul>
-
-            <hr>
-
-            <h3>Experience & Custom Development</h3>
-            <p>
-                With a proven track record at <span class="highlight">Qamsoft Technologies</span>, I specialize in <strong>custom web development</strong>, moving beyond generic templates to architect bespoke solutions tailored to specific business logic.
-            </p>
-            <p>
-                I approach every project with a <strong>language-agnostic mindset</strong>, building <strong>comprehensive digital tools</strong> that empower businesses to operate more efficiently.
-            </p>
-
-            <h3>My Philosophy</h3>
-            <p>
-                I believe that the best software is born from a mix of <span class="highlight">curiosity and collaboration</span>. I am constantly evolving alongside the tech landscape to ensure that the products I build are future-proof.
-            </p>
+            <div class="container">
+                <h2 class="section-title fade-in-up">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text fade-in-up">
+                        <p class="about-intro">
+                            I'm a dedicated <strong>Full Stack Web Developer</strong> with a passion for building digital experiences 
+                            that are as seamless as they are impactful. I specialize in architecting and deploying dynamic, 
+                            high-performance web applications designed to solve real-world problems.
+                        </p>
+                        <h3 class="about-subtitle">Why I Do What I Do</h3>
+                        <p>
+                            In an era where the web is the primary touchpoint for human connection and business growth, 
+                            I believe a website should be more than just a static page—it should be an interactive experience.
+                        </p>
+                        <ul class="about-list">
+                            <li class="list-item-animate"><span class="highlight">Front-End Artistry:</span> I craft responsive, pixel-perfect designs that adapt beautifully to any device.</li>
+                            <li class="list-item-animate"><span class="highlight">Back-End Engineering:</span> I thrive on server-side logic, data management, and enterprise-level security.</li>
+                            <li class="list-item-animate"><span class="highlight">Problem Solving:</span> I view every project as an opportunity to innovate and exceed expectations.</li>
+                            <li class="list-item-animate"><span class="highlight">User Experience:</span> I prioritize creating intuitive interfaces that users love to interact with.</li>
+                        </ul>
+                    </div>
+                    <div class="about-image fade-in-up">
+                        <img src="/images/project1.jpg" alt="About - Professional Experience" class="about-img">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">HTML5</div>
-                <div class="skill-card">CSS3</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">React</div>
-                <div class="skill-card">Bootstrap</div>
-                <div class="skill-card">Node.js</div>
-                <div class="skill-card">Express</div>
-                <div class="skill-card">MongoDB</div>
-                <div class="skill-card">SQL</div>
-                <div class="skill-card">PHP</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">Java</div>
-                <div class="skill-card">WordPress</div>
-                <div class="skill-card">Figma</div>
+            <div class="container">
+                <h2 class="section-title fade-in-up">Technical Skills</h2>
+                <div class="skills-content">
+                    <div class="skill-group fade-in-up">
+                        <h3 class="skill-group-title">Frontend</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card card-animate">HTML5</div>
+                            <div class="skill-card card-animate">CSS3</div>
+                            <div class="skill-card card-animate">JavaScript</div>
+                            <div class="skill-card card-animate">React</div>
+                            <div class="skill-card card-animate">Bootstrap</div>
+                            <div class="skill-card card-animate">Figma</div>
+                        </div>
+                    </div>
+                    <div class="skill-group fade-in-up">
+                        <h3 class="skill-group-title">Backend</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card card-animate">Node.js</div>
+                            <div class="skill-card card-animate">Express</div>
+                            <div class="skill-card card-animate">Python</div>
+                            <div class="skill-card card-animate">PHP</div>
+                            <div class="skill-card card-animate">Java</div>
+                            <div class="skill-card card-animate">APIs</div>
+                        </div>
+                    </div>
+                    <div class="skill-group fade-in-up">
+                        <h3 class="skill-group-title">Databases & Tools</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card card-animate">MongoDB</div>
+                            <div class="skill-card card-animate">SQL</div>
+                            <div class="skill-card card-animate">Git</div>
+                            <div class="skill-card card-animate">WordPress</div>
+                            <div class="skill-card card-animate">AWS</div>
+                            <div class="skill-card card-animate">Docker</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects" class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="/images/project2.jpg" alt="E-Commerce Platform Preview">
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>HTML, CSS, JavaScript</p>
+            <div class="container">
+                <h2 class="section-title fade-in-up">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card card-animate">
+                        <div class="project-image">
+                            <img src="/images/project2.jpg" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Full-stack solution with payment integration</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="/images/project3.jpg" alt="Online Store UI">
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>Full Stack Solution</p>
+                    <div class="project-card card-animate">
+                        <div class="project-image">
+                            <img src="/images/project3.jpg" alt="Online Store">
+                            <div class="project-overlay">
+                                <h3>Online Store</h3>
+                                <p>Responsive design with modern UI</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="/images/project4.jpg" alt="Online Store UI">
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>Full Stack Solution</p>
+                    <div class="project-card card-animate">
+                        <div class="project-image">
+                            <img src="/images/project4.jpg" alt="Design Project">
+                            <div class="project-overlay">
+                                <h3>Modern UI Design</h3>
+                                <p>Creative and interactive interface</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="/images/project8.jpg" alt="Restaurant Booking System">
-                    <div class="project-info">
-                        <h3>Restaurant Website</h3>
-                        <p>Responsive Design</p>
+                    <div class="project-card card-animate">
+                        <div class="project-image">
+                            <img src="/images/project8.jpg" alt="Restaurant Website">
+                            <div class="project-overlay">
+                                <h3>Restaurant Website</h3>
+                                <p>Booking system and menu management</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="/images/project10.png" alt="Restaurant Booking System">
-                    <div class="project-info">
-                        <h3>Restaurant Website</h3>
-                        <p>Responsive Design</p>
+                    <div class="project-card card-animate">
+                        <div class="project-image">
+                            <img src="/images/project9.png" alt="Restaurant App">
+                            <div class="project-overlay">
+                                <h3>Food Delivery App</h3>
+                                <p>Mobile-responsive ordering platform</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="/images/project9.png" alt="Restaurant Booking System">
-                    <div class="project-info">
-                        <h3>Restaurant Website</h3>
-                        <p>Responsive Design</p>
+                    <div class="project-card card-animate">
+                        <div class="project-image">
+                            <img src="/images/project10.png" alt="Creative Work">
+                            <div class="project-overlay">
+                                <h3>Creative Portfolio</h3>
+                                <p>Showcasing design and development skills</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section id="videos" class="videos">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Project Showcase Videos</h2>
+                <div class="videos-grid">
+                    <div class="video-card card-animate">
+                        <div class="video-wrapper">
+                            <video autoplay muted loop class="project-video" aria-label="E-Commerce Platform Demo">
+                                <source src="/images/video1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Full Stack Demo Video</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-animate">
+                        <div class="video-wrapper">
+                            <video autoplay muted loop class="project-video" aria-label="Restaurant Website Demo">
+                                <source src="/images/video2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">
+                                <h3>Restaurant Website</h3>
+                                <p>Booking System Demo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-animate">
+                        <div class="video-wrapper">
+                            <video autoplay muted loop class="project-video" aria-label="UI/UX Design Demo">
+                                <source src="/images/video3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">
+                                <h3>UI/UX Design</h3>
+                                <p>Interactive Interface</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:Itxeman113@gmail.com">Itxeman113@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+923270218838">+92-3270218838</a></p>
-            </div>
+            <div class="container">
+                <h2 class="section-title fade-in-up">Let's Work Together</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info fade-in-up">
+                        <h3>Get In Touch</h3>
+                        <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item slide-in-left">
+                                <h4>Email</h4>
+                                <a href="mailto:Itxeman113@gmail.com" class="contact-link">Itxeman113@gmail.com</a>
+                            </div>
+                            <div class="contact-item slide-in-left">
+                                <h4>Phone</h4>
+                                <a href="tel:+923270218838" class="contact-link">+92-3270218838</a>
+                            </div>
+                            <div class="contact-item slide-in-left">
+                                <h4>Location</h4>
+                                <p class="contact-text">Pakistan</p>
+                            </div>
+                        </div>
 
-            <form id="contactForm">
-        <h2>Contact Me</h2>
-        input type="text" id="name" placeholder="Your Name" required>
-        <h2>Contact Me</h2>
-        input type="email" id="email" placeholder="Your Email" required>
-        <h2>Contact Me</h2>
-        textarea id="message" placeholder="Your Message" required></textarea>
-        <h2>Contact Me</h2>
-        button type="submit">Send Message</button>
-</form>
+                        <div class="social-links slide-in-left">
+                            <a href="https://www.linkedin.com/in/core-codestudio-a917983b2" target="_blank" rel="noopener noreferrer" class="social-icon hover-scale" title="LinkedIn">
+                                <img src="/images/linkedin.jpg" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/codestudiocore-source" target="_blank" rel="noopener noreferrer" class="social-icon hover-scale" title="GitHub">
+                                <img src="/images/github.jpg" alt="GitHub">
+                            </a>
+                            <a href="https://wa.me/923270218838" target="_blank" rel="noopener noreferrer" class="social-icon hover-scale" title="WhatsApp">
+                                <img src="/images/whatsapp.jpg" alt="WhatsApp">
+                            </a>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" class="contact-form fade-in-up">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary hover-lift">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-<footer class="footer">
-    <div class="social-icons">
-    <a href="https://www.linkedin.com/in/core-codestudio-a917983b2" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-    </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section fade-in-up">
+                    <h4>Eman Fatima</h4>
+                    <p>Full Stack Developer & UI/UX Designer</p>
+                </div>
+                <div class="footer-section fade-in-up">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#skills" class="footer-link">Skills</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#videos" class="footer-link">Videos</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section fade-in-up">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/core-codestudio-a917983b2" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <img src="/images/linkedin.jpg" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/codestudiocore-source" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <img src="/images/github.jpg" alt="GitHub">
+                        </a>
+                        <a href="https://wa.me/923270218838" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                            <img src="/images/whatsapp.jpg" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eman Fatima. All Rights Reserved. | Designed & Developed with <span class="heart">❤️</span></p>
+            </div>
+        </div>
+    </footer>
 
-    <a href="https://github.com/codestudiocore-source" target="_blank" rel="noopener noreferrer" title="GitHub">
-        <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://wa.me/923270218838" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    </div>
-
-    <p>© 2026 Eman Fatima. All Rights Reserved.</p>
-</footer>
     <script src="scripe.js"></script>
 </body>
 </html>
