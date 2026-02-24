@@ -107,7 +107,9 @@ if (contactForm) {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/send', {
+            // FIX: Replaced localhost fetch with Formspree to resolve "Dangerous Site" warning on GitHub Pages.
+            // TODO: Register at https://formspree.io/ to get your form ID and replace 'YOUR_FORMSPREE_ID' below.
+            const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -115,16 +117,15 @@ if (contactForm) {
                 body: JSON.stringify({ name, email, subject, message })
             });
 
-            const data = await response.json();
-
-            if (data.success) {
+            if (response.ok) {
                 showNotification('Message sent successfully! 🎉', 'success');
                 contactForm.reset();
             } else {
-                showNotification(data.message || 'Error sending message', 'error');
+                const data = await response.json();
+                showNotification(data.error || 'Error sending message', 'error');
             }
         } catch (error) {
-            showNotification('Error: Backend server not running on localhost:5000', 'error');
+            showNotification('Error sending message. Please check your connection.', 'error');
             console.error('Error:', error);
         }
     });
@@ -261,4 +262,3 @@ if (window.performance && window.performance.timing) {
         console.log('Page load time: ' + pageLoadTime + 'ms');
     });
 }
-
